@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logsystem.LoginController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="320.0" prefWidth="300.0" GridPane.columnIndex="1">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" prefHeight="21.0" prefWidth="85.0" text="DB Status" />
+            <Label fx:id="dbstatus" layoutX="97.0" layoutY="14.0" prefHeight="21.0" prefWidth="167.0" />
+            <Label layoutX="22.0" layoutY="65.0" prefHeight="28.0" prefWidth="85.0" text="Username" />
+            <Label layoutX="22.0" layoutY="109.0" prefHeight="21.0" prefWidth="68.0" text="Password" />
+            <TextField fx:id="user" layoutX="116.0" layoutY="67.0" promptText="username" />
+            <PasswordField fx:id="pass" layoutX="116.0" layoutY="107.0" promptText="password" />
+            <ComboBox fx:id="combo" layoutX="115.0" layoutY="150.0" prefWidth="150.0" promptText="Admin / Student" />
+            <Button fx:id="button" layoutX="116.0" layoutY="196.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="150.0" text="Login" />
+            <Label fx:id="loginStatus" layoutX="115.0" layoutY="236.0" prefHeight="36.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
